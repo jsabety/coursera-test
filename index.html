@@ -5,12 +5,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js" integrity="sha256-23hi0Ag650tclABdGCdMNSjxvikytyQ44vYGo9HyOrU=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <title>Page Title</title>
+    <title>My first AngularJS App</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
 </head>
 <body>
-    Hello Coursera Studen ts!
+    <h1>My First AngularJS App</h1>
+    <div ng-controller="MyFirstController">
+        {{sayHello()}}
+        <input type="text" ng-model="name">
+        Inside my input is: {{name}}
+    </div>
 </body>
 </html>
